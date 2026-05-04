@@ -14,6 +14,11 @@ public class Video extends Media {
     public void play () {
         IO.println ("Adjusting video resolution...");
     }
+//    public void release () {
+//       IO.println (super.releaseyr); 
+//    } 
+//  it will show an error saying it can't find symbol because releaseyr is not protected in Media.java
+
     public void title () {
         IO.println (super.title);
     }
@@ -57,4 +62,3 @@ final class Thrillershows extends Video {
 
 // class Entertainment extends Video, Book {}
 // won't run due to multiple inheritance restriction {}
-
