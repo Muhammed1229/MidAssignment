@@ -57,6 +57,7 @@ public class Main {
                         IO.println ("Streaming Shows...");
                         IO.println ("Anime Title: " + anime1.getVidtitle() + ", Duration: " + anime1.getDurationinmins() + " minutes, " + "Cannon Only: " + anime1.isIscannon());
                         IO.println ("Thriller Title: " + thriller1.getVidtitle() + ", Duration: " + thriller1.getDurationinmins() + " minutes, Rating: " + thriller1.getRating() + "/10");
+                        thriller1.copyrightnotice();
                     }
 
                     else if (mediafile == 1.3) {              
