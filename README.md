@@ -15,7 +15,7 @@ It's a console app that lets you pick between a standard basic calculator and a 
 * **Polymorphism (OOP V4.0):** * *Method Overriding:* Both child classes provide their own custom logic for the `.calculate(operator, num1, num2)` method.
   * *Method Overloading:* `Basic_calculator.java` has a second version of `.calculate()` that only takes two parameters, specifically used for single-number math (like squaring or square roots).
   * *Upcasting:* Stored the calculators in an `ArrayList<Operation>`, allowing the main program to treat both child engines as general `Operation` objects.
-* **instanceof (OOP V4.0):** Used the `instanceof` operator in the main execution loop to safely verify the active object type at runtime.
+* **Safe Downcasting & `instanceof` (OOP V4.0):** Used the `instanceof` operator in the main execution loop to safely verify the active object type at runtime. Once verified, **Downcasting** (`(Basic_calculator) activeEngine`) was used to access the overloaded method.
 * **Exception Handling (OOP V5.0):** * Created a custom checked exception called `invalidoperation` to stop impossible math (like dividing by zero).
   * Wrapped the main scanner loop in `Calculator.java` with a `try-catch-finally` block to catch bad inputs and gracefully reset without crashing the terminal.
 
